@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object Create Example</title>
+	<script type="text/javascript">
+	
+	var objectOne = {
+  		x: 10,
+  		y: {
+    		z: 20
+  		}
+	};
+
+	var objectTwo = Object.create(objectOne);
+
+	objectTwo.x = 100;
+	objectTwo.y.z = 200;
+
+	console.dir(objectTwo);
+	console.dir(objectOne);
+
+	</script>
+</head>
+<body>
+		<!-- An easier way of using the prototype pattern -->
+</body>
+</html>
